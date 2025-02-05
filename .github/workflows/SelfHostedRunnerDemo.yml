@@ -1,0 +1,17 @@
+
+name: 'Self Hosted Runner Demo'
+
+on:
+    workflow_dispatch:
+
+jobs:
+    self_hosted_runner_demo:
+        runs-on: [self-hosted, Windows, X64]
+        steps:
+            -   name: 'Run-in-self-hosted-runner'
+                run: echo "This is a self-hosted runner"
+
+            -   name: 'sleep for 100 seconds'
+                run: |
+                    echo "Sleeping for 100 seconds"
+                    sleep 100
