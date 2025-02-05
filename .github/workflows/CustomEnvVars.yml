@@ -24,6 +24,6 @@ jobs:
           echo "$GREETING $FIRST_NAME. Today is $DAY_OF_WEEK."
           echo "TESTVAR: $TESTVAR"
           echo " TESTVAR: ${{ env.TESTVAR }}"
-      env:
-        FIRST_NAME: 'CS Student'
-        testvar: value-3
+        env:
+          FIRST_NAME: 'CS Student'
+          testvar: value-3
