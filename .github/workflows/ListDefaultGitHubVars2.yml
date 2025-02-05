@@ -1,4 +1,4 @@
-name = 'Default GitHub Environment Variables'
+name: 'Default GitHub Environment Variables'
 
 on:
     push:
