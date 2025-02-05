@@ -16,8 +16,8 @@ jobs:
                 id: var_source_step
                 run: |
                     echo "Performing a random task"
-                    echo "::set-output name=var1_name::var1_value"
-                    echo "::set-output name=var2_date::$(date + '%Y-%m-%d-%H-%M-%S')"
+                    echo "var1_name=var1_value" >> $GITHUB_ENV
+                    echo "var2_date=$(date + '%Y-%m-%d-%H-%M-%S')" >> $GITHUB_ENV
 
             -   name: 'Use the value'
                 id: step_three
